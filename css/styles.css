@@ -1,0 +1,390 @@
+:root {
+    --main-title-color: #ffffff;
+    --second-title-color: #212121;
+    --first-text-color: #757575;
+    --second-text-color: rgba(255, 255, 255, 0.6);
+    --third-text-color: #FFFFFF;
+    --button-color: #FFFFFF;
+    --header-text-color: #212121;
+    --accent-color: #2196F3;
+    --background-face-footer-color: #2F303A;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+p, h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+    color: var(--header-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+/* ----------HEADER---------- */
+
+.header-logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--header-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-logo-accent {
+    color: var(--accent-color);
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--header-text-color);
+}
+
+.header-connect {
+    margin-left: auto;
+}
+
+.header-logo {
+    margin-right: 93px;
+}
+
+.header-item {
+    margin-right: 50px;
+}
+
+.header-item :last-child {
+    margin-right: 0;
+}
+
+.header-tel {
+    margin-left: 50px;
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+}
+
+.header-logo:hover,
+.header-logo:focus {
+    color: var(--accent-color);
+}
+
+.header-tel,
+.header-meilto {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--first-text-color);
+    }
+
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--accent-color);
+}
+
+.header-meilto:hover,
+.header-meilto:focus {
+    color: var(--accent-color);
+}
+
+/* ----------HERO---------- */
+
+.hero {
+    background-color: var(--background-face-footer-color);
+    padding-left: 452px;
+    padding-right: 452px;
+    padding-top: 200px;
+    padding-bottom: 280px;
+    display: flex;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--button-color);
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+    color: var(--accent-color);
+    background-color: var(--main-title-color);
+}
+
+/* ----------ABOUT---------- */
+
+.about {
+    padding-top: 94px;
+    padding-left: 215px;
+}
+
+.about-item {
+    width: 270px;
+}
+
+.feature-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.about-list {
+    display: flex;
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-title-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--first-text-color);
+    margin-bottom: 94px;
+}
+
+
+
+/* ----------ABOUT-WORK---------- */
+
+.about-work {
+    padding-top: 0;
+}
+
+.work-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+    margin-bottom: 50px;
+    
+}
+
+.about-img {
+    display: flex;
+}
+
+.about-img-item:not(:last-child) {
+    margin-right: 30px;
+    padding-bottom: 94px;
+}
+
+/* ----------ABOUT-COMPANY---------- */
+
+.about-company {
+    background-color: #F5F4FA;
+    display: flex;
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.company-item {
+    margin-right: 30px;
+    background-color: var(--main-title-color);
+}
+
+.company-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.company-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+
+}
+
+.member-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+
+.member-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--first-text-color);
+}
+
+/* ----------FOOTER---------- */
+
+.footer {
+    background-color: var(--background-face-footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: var(--main-title-color);
+    display: flex;
+}
+
+
+.address {
+    font-style: normal;
+}
+
+.address-link {
+    color: var(--first-text-color)
+}
+
+.address-item:not(:last-child) {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.footer-logo-accent {
+    color: var(--accent-color);
+}
+
+.location {
+    color: var(--main-title-color);
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+}
+
+.address-link:focus,
+.location:focus,
+.address-link:hover,
+.location:hover {
+    color: var(--accent-color);
+}
+
+/* ----------PORTFOLIO---------- */
+
+.button-gallery {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--second-title-color);
+    cursor: pointer;
+
+}
+
+.button-gallery:hover,
+.button-gallery:focus {
+    color: var(--button-color);
+    background-color: var(--accent-color);
+}
+
+.gallery-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: var(--second-title-color);
+}
+
+.gallery-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--first-text-color);
+}
